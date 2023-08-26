@@ -10,3 +10,81 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
+
+:root {
+    --bg-color: #1f242d;
+    --second-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+   /*  width: 1248px; height: 485px; left: 96px; top: 64px; position: absolute; background: #1F242D */
+}
+
+.navbar {
+    width: 100%;
+    height: 63px;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    /* "width: 1248px; height: 63px; left: 96px; top: 5px; position: absolute" */
+}
+.navlink {
+    width: 376px; 
+    height: 14px; 
+    left: 872px; 
+    top: 19px; 
+    position: absolute;
+    display: flex;
+}
+.nav-item {
+    color: var(--text-color);
+    padding-right: 34px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.nav-item:last-child {
+    padding-right: 0;
+}
+
+.logo {
+    width: 12vw;
+    height: 4.2vh;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+.vector {
+    width: 30px; 
+    height: 30px; 
+    position: absolute;
+}
+.name {
+    margin-top: 2px; 
+    margin-left: 37px; 
+    position: absolute; 
+    font-size: 1.5rem;
+}
+
