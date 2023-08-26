@@ -1,72 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
 
-    <!-- box icons -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Portfolio</title>
+  <!-- custom css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/particles.css">
+</head>
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+<body>
+  <!-- header design -->
+  <div class="header">
+    <div class="navbar">
+      <div class="logo">
+        <img src="./../images/logo.svg" alt="logo" class="vector">
+        <div class="title">Manu Ribeiro</div>
+      </div>
+      <div class="navlink" id="myTopnav">
+        <a class="nav-item" href="#home">Home</a>
+        <a class="nav-item" href="#about">Sobre mim</a>
+        <a class="nav-item" href="#services">Projetos</a>
+        <a class="nav-item" href="#portfolio">Contato</a>
+      </div>
+    </div>
+  </div>
 
-  <body>
-    <!-- header design -->
-    <div class="header">
-      <div class="navbar">
-        <div class="logo">
-          <img src="./../images/logo.svg" alt="logo" class="vector">
-          <div class="title">Manu Ribeiro</div>
-        </div>
-        <div class="navlink">
-          <a class="nav-item" href="#home">Home</a>
-          <a class="nav-item" href="#about">Sobre mim</a>
-          <a class="nav-item" href="#services">Projetos</a>
-          <a class="nav-item" href="#portfolio">Contato</a>
-        </div>
-      </div>    
-    </div>  
+   <!-- particles.js container -->
+  <div id="particles-js"></div>
+  <!-- particles.js container -->
 
-    <!-- home section design -->
+   <!-- home section design -->
   <div class="container">
     <section class="cover">
       <div class="profile-img">
         <div class="background-image">
-        <img src="./../images/home.png" alt="photo" class="pic">
-      </div>
-      </div>
-      <section class="intro">
-        <div class="intro-text">
-
-
+          <img src="./../images/home.png" alt="photo" class="pic">
         </div>
-      </section>
+      </div>
+      <div class="intro-text">
+        <h1 class="greeting">Olá, me chamo</h1><span class="name"> Ana Manuella.</span>
+        <h1>
+          <a href="" class="typewrite" data-period="2000"
+            data-type='[ "Sou Desenvolvedora Front-End Jr.", "Sou apaixonada por programação.", "Sou criativa.", "Amo Design."]'>
+            <span class="wrap"></span>
+          </a>
+        </h1>
+      </div>
     </section>
   </div>
 
+  <!-- stats - count particles -->
+  <div class="count-particles">
+    <span class="js-count-particles">--</span> particles
+  </div>
 
 
-    <!-- about section design -->
+  <!-- about section design -->
 
-    <!-- services section design -->
+  <!-- services section design -->
 
-    <!-- portfolio section design -->
+  <!-- portfolio section design -->
 
-    <!-- contact section design -->
+  <!-- contact section design -->
 
-    <!-- footer design -->
+  <!-- footer design -->
 
 
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Typewritter effect -->
 
-    <!-- typed js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!--  Particles js -->
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- stats.js lib -->
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 
-    <!-- custom js -->
-    <script src="js/script.js"></script>
-  </body>
+  <!-- custom js -->
+  <script src="js/script.js"></script>
+  <script src="js/particles.js"></script>
+</body>
+
 </html>

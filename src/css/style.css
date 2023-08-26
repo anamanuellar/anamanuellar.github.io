@@ -92,7 +92,8 @@ body{
     font-size: 1.5rem;
 }
 .container {
-    margin: 0 96px;
+    width: 100vw;
+    height: 485px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -105,6 +106,7 @@ body{
 .pic {
     width: 300px;
     height: 300px;
+    margin: auto;
 }
 .background-image {
     position: absolute;
@@ -122,4 +124,36 @@ body{
       0 0 50px #fff,            /* outer white */
       -10px 0 80px #f0f,        /* outer left magenta */
       10px 0 80px #0ff;         /* outer right cyan */
+}
+
+.greeting {
+    display: inline-block;
+    font-size: 5rem;
+    margin-top: 60vh;
+}
+
+.name {
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.wrap { 
+    border-right: 0.08em solid #fff;
+    color: var(--text-color);
+    font-size: 4rem;
+}
+
+
+
+
+/* Tela menor que 600px*/
+@media only screen and (max-width: 600px) {
+    .pic .background-image {
+        width: calc(100% - 150px);
+        height: calc(100% - 150px);
+    }
+
+    .pic {
+        margin: auto;
+    }
 }
