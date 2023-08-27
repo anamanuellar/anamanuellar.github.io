@@ -33,7 +33,7 @@ TxtType.prototype.tick = function() {
     }
 
     // Atualiza o conteúdo HTML do elemento armazenado em this.el com uma nova string que contém um elemento span com classe "wrap" e o texto armazenado na variável this.txt
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    this.el.innerHTML = '<span class="typewrite-wrap">'+this.txt+'</span>';
 
     // Cria a variável that e recebe o valor de this
     var that = this;

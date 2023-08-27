@@ -48,7 +48,7 @@ body{
     font-size: 1.6rem;
     color: var(--text-color);
 }
-.navlink {
+.nav-link {
     width: 376px; 
     height: 14px; 
     left: 65%; 
@@ -61,14 +61,14 @@ body{
     font-weight: 500;
   }
 
-.nav-item {
+.nav-menu {
     color: var(--text-color);
     padding-right: 34px;
     text-transform: uppercase;
     font-size: 1.4rem;
 }
 
-.nav-item:last-child {
+.nav-menu:last-child {
     padding-right: 0;
 }
 
@@ -80,12 +80,12 @@ body{
     font-weight: 600;
     cursor: default;
 }
-.vector {
+.logo-image {
     width: 30px; 
     height: 30px; 
     position: absolute;
 }
-.title {
+.logo-title {
     margin-top: 2px; 
     margin-left: 37px; 
     position: absolute; 
@@ -94,6 +94,7 @@ body{
 .container {
     width: 100vw;
     height: 350px;
+    margin-top: 7rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -103,7 +104,8 @@ body{
     height: calc(60vh + 23px);
     z-index: 1000;
   }
-.pic {
+
+.profile-pic {
     width: 300px;
     height: 300px;
     margin: auto;
@@ -125,19 +127,21 @@ body{
       -10px 0 80px #f0f,        /* outer left magenta */
       10px 0 80px #0ff;         /* outer right cyan */
 }
-
-.greeting {
+.divider {
+    padding: 6rem;
+}
+.intro-greeting {
     display: inline-block;
     font-size: 5rem;
     margin-top: 60vh;
 }
 
-.name {
+.intro-name {
     font-size: 5rem;
     font-weight: bold;
     color: var(--main-color);
 }
-.wrap { 
+.typewrite-wrap { 
     border-right: 0.08em solid #fff;
     color: var(--text-color);
     font-size: 4rem;
@@ -148,70 +152,121 @@ body{
 }
 .box {
     display: flex;
-    width: 50vw;
+    width: 1084px;
     height: 300px;
-    padding: 18px 45px 17px 33px;
-    align-items: flex-start;
-    gap: 205px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
     flex-shrink: 0;
+    box-sizing: border-box;
 }
 .box-container {
-    width: 100%;
-    height: 250px;
+    height: auto; 
     flex-shrink: 0;
+    flex: 1;
 }
-.box-stack {
+
+.box-container:first-child {
+    width: 680px; 
+    height: 211px; 
+    margin-right: 40px;
+    padding-right: 28rem;
+}
+
+.box-container:last-child {
+    width: 350px; 
+    height: 184px; 
+}
+.stack-title{
+    padding: 0 0 20px 0;
+}
+
+.stack-icons {
     width: 100%;
-    height: 199px;
-    flex-shrink: 0;
-}
-.stack-group {
+    height: auto;
+    margin-top: 10px;
     display: flex;
-    flex-direction: column;
-    background: var(--color-bg);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
 }
+  
+.stack-icons div {
+    width: calc(33.33% - 10px);
+    height: calc(33.33% - 10px);
+    background-color: #121212;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px 20px 20px;
+    margin-bottom: 20px;
+}
+
+  
+.stack-icons svg {
+    width: 60px;
+    height: 60px;
+    
+    
+}
+  
+.about-heading{
+    padding: 0 0 20px 0;
+}
+
+.about-text{
+    width: 650px; 
+    text-align: justify; 
+    padding: 0 0 20px 0;
+    
+}
+
+
+
 
 /*TODO: Ajustar responsividade*/
 /* Tela menor que 600px*/
 @media only screen and (max-width: 600px) {
-    .pic .background-image {
+    .profile-pic .background-image {
         width: calc(100% - 150px);
         height: calc(100% - 150px);
     }
 
-    .pic {
+    .profile-pic {
         margin: auto;
     }
-    .greeting {
+    .intro-greeting {
         margin-top: 85vh;
         font-size: 4rem;
     }
-        .name {
+        .intro-name {
         font-size: 4rem;
     }
-        .wrap { 
+        .typewrite-wrap { 
         font-size: 3rem;
     }
 }
 
 /*TODO: Ajustar responsividade*/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-    .pic .background-image {
+    .profile-pic .background-image {
         width: calc(100% - 150px);
         height: calc(100% - 150px);
     }
 
-    .pic {
+    .profile-pic {
         margin: auto;
     }
-    .greeting {
+    .intro-greeting {
         margin-top: 90vh;
         font-size: 4rem;
     }
-        .name {
+        .intro-name {
         font-size: 4rem;
     }
-        .wrap { 
+        .typewrite-wrap { 
         font-size: 3rem;
     }
 }
