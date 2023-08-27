@@ -222,7 +222,32 @@ body{
     padding: 0 0 20px 0;
     
 }
+.table-title{
+    margin-top: 8rem;
+    font-size: 1rem;
 
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+    width: 72%;
+    margin-top: 2rem;
+    
+}
+
+td {
+    height: 10px;
+    border: 1px solid #9ca6b8;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.color-0 { background-color: #323946; }
+.color-1 { background-color: #9be9a8; }
+.color-2 { background-color: #40c463; }
+.color-3 { background-color: #30a14e; }
+.color-4 { background-color: #216e39; }
 
 
 
