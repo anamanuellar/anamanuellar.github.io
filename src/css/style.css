@@ -93,7 +93,7 @@ body{
 }
 .container {
     width: 100vw;
-    height: 350px;
+    height: calc(60vh + 23px);
     margin-top: 7rem;
     position: relative;
     display: flex;
@@ -101,7 +101,6 @@ body{
     justify-content: center;
     text-align: center;
     align-items: center;
-    height: calc(60vh + 23px);
     z-index: 1000;
   }
 
@@ -191,7 +190,6 @@ body{
     align-items: center;
     
 }
-  
 .stack-icons div {
     width: calc(33.33% - 10px);
     height: calc(33.33% - 10px);
@@ -203,16 +201,13 @@ body{
     padding: 25px 20px 20px 20px;
     margin-bottom: 20px;
 }
-
   
 .stack-icons svg {
     width: 60px;
-    height: 60px;
-    
-    
+    height: 60px;    
 }
   
-.about-heading{
+.about-title{
     padding: 0 0 20px 0;
 }
 
@@ -220,12 +215,24 @@ body{
     width: 650px; 
     text-align: justify; 
     padding: 0 0 20px 0;
-    
 }
-.table-title{
-    margin-top: 8rem;
-    font-size: 1rem;
+.github-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
 
+.section-title {
+    padding: 0 0 20px 0;
+}
+
+.table-title{
+    margin-top: 40vh;
+    font-size: 2rem;
 }
 
 table {
@@ -233,6 +240,8 @@ table {
     border-spacing: 2px;
     width: 72%;
     margin-top: 2rem;
+    margin-left: 13vw;
+    color: #fff;
     
 }
 
