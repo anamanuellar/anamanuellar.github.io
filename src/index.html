@@ -7,11 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Portfolio</title>
+  
   <!-- custom css -->
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/particles.css">
   <!-- Github Calendar -->
   <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+  <script src="https://kit.fontawesome.com/8b3d35e33a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -37,7 +39,7 @@
 
   <!-- home section design -->
   <div class="container">
-    <section class="cover" id="home">
+    <div class="cover" id="home">
       <div class="profile-img">
         <div class="background-image">
           <img src="./../images/home.png" alt="photo" class="profile-pic">
@@ -52,7 +54,7 @@
           </a>
         </h1>
       </div>
-    </section>
+    </div>
   </div>
 
   <!-- stats - count particles -->
@@ -278,16 +280,37 @@
 </div>
 
   <!-- contact section design -->
+ 
+  <section class="contact-section" id="contact">
+    
+<div class="social-media">
+  <h2 class="contact-title">Entre em contato</h2>
+    <ul class="social-icons">
+      <li><a href="https://wa.me/5571982593895"><i class="fa-brands fa-whatsapp"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/manu-ribeiro-dev/"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="https://www.instagram.com/rsmanu30/"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="mailto:ribeiro.anamanuella@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+    </ul>
+  </div>
+<form>      
+  <input name="name" type="text" class="contact-form" placeholder="Nome" />   
+  <input name="email" type="text" class="contact-form" placeholder="Email" />
+  <textarea name="text" class="contact-form" placeholder="Mensagem"></textarea>
+  <input type="submit" value="Enviar"/>
+</form>
+</section>
 
   <!-- footer design -->
+  <footer>
+    <div class="footer-content">
+        <span>Todos os direitos reservados &copy; 2023</span>
+    </div>
+</footer>
 
 
-  <!-- Typewritter effect -->
 
   <!--  Particles js -->
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <!-- stats.js lib -->
-  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
   <!-- Github Calendar -->
   <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
   </script>
