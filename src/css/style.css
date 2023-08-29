@@ -258,83 +258,54 @@ td {
 .color-3 { background-color: #30a14e; }
 .color-4 { background-color: #216e39; }
 
-
-.stack-project {
+.card-group {
+    margin-top: 35%;
+    margin-left: 13vw;
+}
+.card-group-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: -60px;
+}
+.card-deck {
     width: 70vw;
-    height: auto;
-    margin-top: 10px;
+    height: 150vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    
 }
-.stack-project div {
+.card {
     width: calc(33.33% - 10px);
     height: calc(33.33% - 10px);
     background-color: #121212;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 25px 20px 20px 20px;
-    margin-bottom: 20px;
+    padding: 20px;
 }
 
-.project-title{
-    margin: 65vh 0 6vh 0;
-    font-size: 2.5rem;
+.card-title{
+    font-size: 2rem;
+    margin-top: 2.4rem;
 }
-
-.list-project {
+.card-body {
+    flexbox: flex;
+}
+.card-text {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.5em;
   }
   
-  .project {
-    width: 33.33%;
-    height: 300px;
-    background-color: #121212;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 20px 20px 20px;
-    margin-bottom: 20px;
-  }
-.screen {
-    width: 228px;
-    height: 228px;
-    top: 0;
-    
+.card-img-top {
+    width: 200px;
+    height: 200px;
 }
-.label {
-    height: 29px;
-    width: 232px;
-    
-}
-.label .ods-heading {
-    color: #fff;
-    font-size: 24px;
-    font-weight: 400;
-    height: 29px;
-    left: 0;
-    top: 7em;
-    letter-spacing: 0;
-    position: relative;
-    white-space: nowrap;
-    }
-
-
-
-
-
-
-
-
-
 
 
 
