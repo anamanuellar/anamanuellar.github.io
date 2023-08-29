@@ -306,7 +306,23 @@ td {
     width: 200px;
     height: 200px;
 }
-
+.card-footer {
+    margin-top: 10px;
+}
+.card-tag{
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 0 8px;
+    margin: 0 5px;
+    background-color: #00ff40;
+    color: var(--second-color);
+    font-size: 1.5em;
+}
+.card-link{
+    padding: 5px 0;
+    font-size: 1.8em;
+    color: var(--text-color);    
+}
 
 
 
