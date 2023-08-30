@@ -217,8 +217,9 @@ body{
     padding: 0 0 20px 0;
 }
 .github-container {
+    margin-top: 150px;
     width: 100vw;
-    height: 100vh;
+    height: 130vh;
     position: absolute;
     display: block;
     justify-content: center;
@@ -259,13 +260,15 @@ td {
 .color-4 { background-color: #216e39; }
 
 .card-group {
-    margin-top: 35%;
+    margin-top: 100vh;
     margin-left: 13vw;
 }
 .card-group-title{
     font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: -60px;
+    text-align: center;
+    margin-bottom: -120px;
+    margin-left: -10em;
 }
 .card-deck {
     width: 70vw;
@@ -275,6 +278,7 @@ td {
     justify-content: space-between;
     align-items: center;
 }
+
 .card {
     width: calc(33.33% - 10px);
     height: calc(33.33% - 10px);
@@ -286,14 +290,15 @@ td {
     align-items: center;
     padding: 20px;
 }
+.card:nth-child(-n+3){
+    margin-bottom: -310px;
+}
 
 .card-title{
     font-size: 2rem;
     margin-top: 2.4rem;
 }
-.card-body {
-    flexbox: flex;
-}
+
 .card-text {
     display: flex;
     flex-wrap: wrap;
@@ -408,7 +413,7 @@ textarea {
   }
 
   footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
