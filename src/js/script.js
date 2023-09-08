@@ -1,3 +1,17 @@
+var ul = document.querySelector('nav ul');
+var menuBtn = document.querySelector('.menu-btn i');
+
+function menuShow() {
+    if (ul.classList.contains('open')) {
+        ul.classList.remove('open');
+    }else{
+        ul.classList.add('open');
+    }
+}
+
+
+
+
 // Cria uma função chamada TxtType que recebe três parâmetros: el, toRotate e period
 var TxtType = function(el, toRotate, period) {
     // Armazena o valor do parâmetro toRotate em uma variável chamada this.toRotate

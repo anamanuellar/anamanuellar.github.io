@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Portfolio</title>
 
   <!-- custom css -->
@@ -13,31 +12,34 @@
   <link rel="stylesheet" href="./css/particles.css">
   <!-- Github Calendar -->
   <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/8b3d35e33a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- header design -->
-  <div class="header">
-    <div class="navbar">
-      <div class="logo">
-        <img src="./../images/logo.svg" alt="logo" class="logo-image">
-        <div class="logo-title">Manu Ribeiro</div>
-      </div>
-      <div class="nav-link" id="myTopnav">
-        <a class="nav-menu" href="#home">Home</a>
-        <a class="nav-menu" href="#about">Sobre mim</a>
-        <a class="nav-menu" href="#portfolio">Projetos</a>
-        <a class="nav-menu" href="#contact">Contato</a>
-      </div>
+  <nav>
+    <div class="logo">
+      <a href=""><img src="./../images/logo.svg" alt="logo" class="logo-image"></a>
+      <a href="" class="logo-title">Manu Ribeiro</a>
     </div>
-  </div>
 
+    <div class="menu-btn">
+      <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+    </div>
+    <ul>
+      <li> <a href="#" class="active"> Início </a> </li>
+      <li> <a href="#"> Sobre</a> </li>
+      <li> <a href="#"> Projetos</a> </li>
+      <li> <a href="#"> Contato</a> </li>
+    </ul>
+  </nav>
   <!-- particles.js container -->
   <div id="particles-js"></div>
   <!-- particles.js container -->
 
-  <!-- home section design -->
+  <!-- hero section design -->
   <div class="container">
     <div class="cover" id="home">
       <div class="profile-img">
@@ -59,14 +61,14 @@
 
   <!-- stats - count particles -->
   <div class="count-particles">
-    <span class="js-count-particles">--</span> particles
+    <span class="js-count-particles"></span>
   </div>
   <div class="divider"></div>
   <!-- about section design -->
-  <div class="box">
+  <div class="box" id="about">
     <div class="box-container">
       <div class="heading">
-        <h2 class="about-title" id="about">Sobre mim</h2>
+        <h2 class="about-title">Sobre mim</h2>
         <p class="about-text">Olá, tudo bem? Meu nome é Ana Manuella mas podem me chamar de Manu. Sou uma desenvolvedora
           full-stack em formação, com uma trajetória profissional na área de gestão operacional e de equipes. Tenho
           pós-graduação em Administração e trabalhei por 9 anos em uma empresa de grande porte na área de hotelaria,
@@ -198,8 +200,7 @@
       </div>
     </div>
   </div>
- 
- 
+
   <div class="github-container">
     <h2 class="table-title">
       Contribuições Github
@@ -315,7 +316,8 @@
 
 
   <!--  Particles js -->
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
   <!-- Github Calendar -->
   <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
   </script>
