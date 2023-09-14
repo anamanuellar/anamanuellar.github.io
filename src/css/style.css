@@ -353,6 +353,9 @@ td {
     font-size: 1.8em;
     color: var(--text-color);    
 }
+.btn-group {
+  margin: 0;
+}
 
 .btn-card {
     display: flex;
