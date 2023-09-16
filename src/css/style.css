@@ -189,7 +189,7 @@ nav .menu-btn i{
 }
 
 .box-container:last-child {
-   margin-top: -23%;
+   margin-top: -15%;
    margin-left: 0;
 }
 .stack-title{
@@ -219,8 +219,8 @@ nav .menu-btn i{
 }
   
 .stack-icons svg {
-    width: 60px;
-    height: 60px;    
+    width: 80px;
+    height: 85px;    
 }
   
 .about-title{
