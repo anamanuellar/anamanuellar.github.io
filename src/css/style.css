@@ -28,13 +28,16 @@ body{
     color: var(--text-color);
 }
 nav {
+    position: fixed;
+    top: 0;
     display: flex;
-    height: 80px;
     width: 100%;
+    background-color: rgba(31,36,45,1);
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px 0 100px;
+    padding: 10px 50px 10px 100px;
     flex-wrap: wrap;
+    z-index: 999;
     
 }
 nav .logo{
@@ -233,9 +236,8 @@ nav .menu-btn i{
     padding: 0 0 20px 0;
 }
 .github-container {
-    margin-top: 150px;
     width: 100vw;
-    height: 130vh;
+    margin-top: 8rem;
     position: absolute;
     display: block;
     justify-content: center;
@@ -248,7 +250,6 @@ nav .menu-btn i{
 }
 
 .table-title{
-    margin-top: 80vh;
     font-size: 2rem;
 }
 
@@ -276,7 +277,7 @@ td {
 .color-4 { background-color: #216e39; }
 
 .card-group {
-    margin-top: 150vh;
+    margin-top: 50vh;
     margin-left: 13vw;
 }
 .card-group-title{
