@@ -176,33 +176,24 @@ nav .menu-btn i{
 }
 .box {
     display: flex;
-    width: 1084px;
-    height: 300px;
-    margin: -50px auto;
-    align-items: center;
-    justify-content: space-between;
-    flex-shrink: 0;
-    box-sizing: border-box;
-}
-.box-container {
-    height: auto; 
-    flex-shrink: 0;
-    flex: 1;
-}
+    flex-direction: row;
+  }
 
-.box-container:first-child {
-    width: 680px; 
-    height: 211px; 
-    margin-right: 40px;
-    padding-right: 28rem;
+.box-container {
+    width: 800px;
+    margin: -200px 100px 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
 }
 
 .box-container:last-child {
-    width: 350px; 
-    height: 184px; 
+   margin-top: -23%;
+   margin-left: 0;
 }
 .stack-title{
-    padding: 0 0 20px 0;
+    padding-bottom: 30px;
 }
 
 .stack-icons {
@@ -211,7 +202,7 @@ nav .menu-btn i{
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     
 }
@@ -223,7 +214,7 @@ nav .menu-btn i{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px 20px 20px 20px;
+    padding: 50px 30px 35px 30px;
     margin-bottom: 20px;
 }
   
@@ -354,7 +345,11 @@ td {
     color: var(--text-color);    
 }
 .btn-group {
-  margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-card {
@@ -363,9 +358,11 @@ td {
     justify-content: space-around;
     flex-wrap: nowrap;
     align-items: center;
+    
 }
 
 .card-button {  
+    width: auto;
     background:#009ba8;
     border-radius:5px;
     padding: 5px 40px;
