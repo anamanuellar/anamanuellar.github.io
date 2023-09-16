@@ -92,29 +92,30 @@ nav .menu-btn i{
     }
     nav ul{
         position: fixed;
-        top: 80px;
+        top: 20px;
         left: -100%;
-        background-color: #0095aa;
-        height: 100vh;
-        width: 100%;
+        background-color: #71819d;
+        height: 28vh;
+        width: 20%;
         text-align: center;
         display: block;
-        transition: all 0.3s ease;
+        transition: all 0.3s ease-out;
+        z-index: 999;
     }
     nav ul.open{
-        left: 0;
+        top: 40px;
+        left: 555px;
     }
     nav ul li{
         width: 100%;
-        margin: 50px 0;
+        margin: 20px 0;
     }
     nav ul li a {
-        font-size: 23px;
+        font-size: 15px;
     }
     nav ul li a.active,
     nav ul li a:hover{
-        background: none;
-        color: #09caa8;
+        background: #09caa8;
     }   
 }
 
