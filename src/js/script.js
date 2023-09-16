@@ -183,3 +183,17 @@ fetch(apiUrl, {
     console.error("Error fetching GitHub contributions:", error);
   });
 
+
+/* Modal */
+
+const modal = document.getElementById('modal');
+const opModal = document.getElementById('opModal');
+const clModal = document.getElementById('clModal');
+const modalBg = document.getElementById('modalBg');
+const toggle = [opModal,clModal,modalBg];
+
+for (let i = 0; i<toggle.length ; i++){
+  toggle[i].addEventListener('click',function(){
+    modal.classList.toggle('is-show');
+  },false);
+}

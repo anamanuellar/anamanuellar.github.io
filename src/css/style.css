@@ -27,6 +27,9 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
 }
+a {
+    cursor: pointer;
+  }
 nav {
     position: fixed;
     top: 0;
@@ -480,6 +483,63 @@ textarea {
     font-size: 14px;
 }
 
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    z-index: 5;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    height: 60%;
+    transition: .4s;
+  }
+  
+  .modalWrapper {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    width: 50%;
+    max-width: 700px;
+    padding: 20px 40px;
+  }
+  .modalBg {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    background-color: hsla(184, 100%, 40%, 0.9);
+  }
+  .clModal {
+    position: absolute;
+    top: 2rem;
+    right: -50px;
+    font-size: 4rem;
+    cursor: pointer;
+  }
+  #opModal {
+    position: relative;
+  }
+  .is-show {
+    visibility: visible;
+    opacity: 1;
+  }
+  .credit-title {
+    padding: 20px;
+  }
+  .credit {
+    font: Poppins;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .credit-list {
+    padding: 10px;
+    justify-content: justify;
+  }
+
 /*TODO: Ajustar responsividade*/
 /* Tela menor que 600px*/
 @media only screen and (max-width: 600px) {
@@ -532,4 +592,4 @@ textarea {
 }
     
 
-
+  
