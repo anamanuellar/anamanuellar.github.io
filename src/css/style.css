@@ -515,7 +515,7 @@ td {
 
 /*TODO: Ajustar responsividade*/
 /* Tela menor que 480px - dispositivos móveis*/
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
     .container {
         width: 90vw;
         height: calc(50vh + 23px);        
@@ -615,10 +615,10 @@ td {
         
     }
 
+}
 
-
-/* Tela menor que 768px*/
-@media only screen and (max-width: 768px) {
+/* Media query para telas de 481px a 768px */
+@media (min-width: 481px)  (max-width: 768px) {
     .logo-image{
         margin-left: -250%;
     }
