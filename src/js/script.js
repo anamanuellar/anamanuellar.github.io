@@ -103,7 +103,7 @@ window.onload = function() {
 
 
 const username = "anamanuellar";
-const accessToken = "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";
+const accessToken = "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";
 const apiUrl = "https://api.github.com/graphql";
 
 const query = `
