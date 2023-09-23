@@ -1,2 +1,2 @@
 // config.js
-var mySecretToken = process.env.MY_SECRET_REPO;
+var mySecretToken = process.env.MY_SECRET_TOKEN;
