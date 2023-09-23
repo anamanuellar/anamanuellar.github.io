@@ -1,5 +1,5 @@
 
-var mySecretToken = process.env.MY_SECRET_TOKEN;
+
 
 const username = "anamanuellar";
 const accessToken = mySecretToken;
