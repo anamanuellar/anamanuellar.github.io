@@ -1,15 +1,19 @@
-var ul = document.querySelector('nav ul');
-var menuBtn = document.querySelector('.menu-btn i');
-
-function menuShow() {
-    if (ul.classList.contains('open')) {
+document.addEventListener('DOMContentLoaded', function() {
+    var ul = document.querySelector('nav ul');
+    var menuBtn = document.querySelector('.menu-btn i');
+  
+    function menuShow() {
+      if (ul.classList.contains('open')) {
         ul.classList.remove('open');
-    }else{
+      } else {
         ul.classList.add('open');
+      }
     }
-}
-
-
+  
+    // Adicione um event listener ao botão de menu para chamar a função menuShow
+    menuBtn.addEventListener('click', menuShow);
+  });
+  
 
 
 // Cria uma função chamada TxtType que recebe três parâmetros: el, toRotate e period

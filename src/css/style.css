@@ -493,10 +493,12 @@ nav .menu-btn i{
 /*TODO: Ajustar responsividade*/
 /* Tela menor que 480px - dispositivos móveis*/
 @media (max-width: 480px) {
+    
     .container {
         width: 90vw;
         height: calc(50vh + 23px);        
       }
+      
     .profile-pic .background-image {
         width: calc(75% - 100px);
         height: calc(75% - 100px);
