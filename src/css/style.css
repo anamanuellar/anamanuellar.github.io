@@ -505,8 +505,7 @@ nav .menu-btn i{
         margin-top: auto;
     }
     .intro-greeting {
-        margin-top: 85vh;
-        margin-right: 10%;
+        margin-top: 85vh;       
     }
     .intro-name {
         margin: auto;
@@ -533,6 +532,7 @@ nav .menu-btn i{
     
     .about-title {
         margin-left: 5%;
+        margin-top: -150%;
     }
     .about-text {
         width: auto; 
@@ -570,11 +570,14 @@ nav .menu-btn i{
         margin-left: -27%;
     }
     .github-table {
-        width: 100%;
+        width: 150%;
+        margin-left: 30px;
     }
     /* Estilização das barras de rolagem */
     .github-container::-webkit-scrollbar {
         width: 8px; 
+        height: 5px;
+    
     }
 
     .github-container::-webkit-scrollbar-thumb {
