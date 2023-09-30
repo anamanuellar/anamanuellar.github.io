@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -10,19 +9,16 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
-
 :root {
     --bg-color: #1f242d;
     --second-color: #323946;
     --text-color: #fff;
     --main-color: #0ef;
 }
-
 html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
-
 body{
     background: var(--bg-color);
     color: var(--text-color);
@@ -30,7 +26,7 @@ body{
 a {
     cursor: pointer;
   }
-  nav {
+nav {
     position: fixed;
     top: 0;
     display: flex;
@@ -63,11 +59,9 @@ nav ul{
     flex-wrap: wrap;
     list-style: none;
 }
-
 nav ul li{
     margin: 0 5px;
 }
-
 nav ul li a{
     color: #f2f2f2;
     text-decoration: none;
@@ -82,15 +76,11 @@ nav ul li a.active,
 nav ul li a:hover{
     background: #09caa8;
 }
-
 nav .menu-btn i{
     color: #fff;
     cursor: pointer;
     display: none;
 }
-
-
-
 .container {
     width: 100vw;
     height: calc(60vh + 23px);
@@ -103,7 +93,6 @@ nav .menu-btn i{
     align-items: center;
     z-index: 1000;
   }
-
 .profile-pic {
     width: 300px;
     height: 300px;
@@ -134,7 +123,6 @@ nav .menu-btn i{
     font-size: 5rem;
     margin-top: 60vh;
 }
-
 .intro-name {
     font-size: 5rem;
     font-weight: bold;
@@ -153,7 +141,6 @@ nav .menu-btn i{
     display: flex;
     flex-direction: row;
   }
-
 .box-container {
     width: 800px;
     margin: -200px 100px 0 100px;
@@ -162,7 +149,6 @@ nav .menu-btn i{
     align-items: center;
     justify-content: center;   
 }
-
 .box-container:last-child {
    margin-top: -15%;
    margin-left: 0;
@@ -170,7 +156,6 @@ nav .menu-btn i{
 .stack-title{
     padding-bottom: 30px;
 }
-
 .stack-icons {
     width: 100%;
     height: auto;
@@ -201,7 +186,6 @@ nav .menu-btn i{
 .about-title{
     padding: 0 0 20px 0;
 }
-
 .about-text{
     width: 650px; 
     text-align: justify; 
@@ -216,20 +200,18 @@ nav .menu-btn i{
     text-align: center;
     align-items: center;
   }
-
 .table-title{
     font-size: 2rem;
     padding-bottom: 1em;
 }
 .github-table {
     width: 60%;
+    
 }
-
 .card-group {
     margin-top: 50vh;
     
 }
-
 .card-group-title {
     font-size: 2.5rem;
     font-weight: bold;
@@ -238,7 +220,6 @@ nav .menu-btn i{
     margin-bottom: 50px;
     padding-top: 20px;
 }
-
 .card-deck {
     width: 100%; 
     display: flex;
@@ -247,7 +228,6 @@ nav .menu-btn i{
     align-items: center;
     padding: 20px;
 }
-
 .card {
     width: calc(33.33% - 20px);
     background-color: #121212;
@@ -259,12 +239,10 @@ nav .menu-btn i{
     padding: 20px;
     margin: 10px; /* Espaçamento entre os cards */
 }
-
 .card-title {
     font-size: 2rem;
     margin-top: 2.4rem;
 }
-
 .card-text {
     display: flex;
     flex-wrap: wrap;
@@ -272,16 +250,13 @@ nav .menu-btn i{
     align-items: center;
     font-size: 1.5em;
 }
-
 .card-img-top {
     width: 200px;
     height: 200px;
 }
-
 .card-footer {
     margin-top: 10px;
 }
-
 .card-tag {
     box-sizing: border-box;
     border-radius: 3px;
@@ -291,13 +266,11 @@ nav .menu-btn i{
     color: var(--second-color);
     font-size: 1.5em;
 }
-
 .card-link {
     padding: 5px 0;
     font-size: 1.8em;
     color: var(--text-color);
 }
-
 .btn-group {
     width: 100%;
     display: flex;
@@ -305,7 +278,6 @@ nav .menu-btn i{
     align-items: center;
     justify-content: center;
 }
-
 .btn-card {
     display: flex;
     flex-direction: row;
@@ -313,7 +285,6 @@ nav .menu-btn i{
     flex-wrap: nowrap;
     align-items: center;
 }
-
 .card-button {
     width: auto;
     background: #009ba8;
@@ -325,7 +296,6 @@ nav .menu-btn i{
     font-size: 14px;
     transition: all 0.3s;
 }
-
 .card-button:hover {
     background: #73c8fb;
 }
@@ -417,7 +387,6 @@ nav .menu-btn i{
     font-size: 30px;
   }
   
-
   footer {
     position: relative;
     bottom: 0;
@@ -428,14 +397,11 @@ nav .menu-btn i{
     justify-content: center;
     z-index: 9999; 
 }
-
 .footer-content {
     padding: 5px;
     text-align: center;
     font-size: 14px;
 }
-
-
 .modal {
     visibility: hidden;
     opacity: 0;
@@ -491,16 +457,13 @@ nav .menu-btn i{
     padding: 10px;
     justify-content: justify;
   }
-
 /*TODO: Ajustar responsividade*/
 /* Tela menor que 480px - dispositivos móveis*/
 @media (max-width: 480px) {
-    
     .container {
         width: 90vw;
         height: calc(50vh + 23px);        
       }
-      
     .profile-pic .background-image {
         width: calc(75% - 100px);
         height: calc(75% - 100px);
@@ -509,7 +472,8 @@ nav .menu-btn i{
         margin-top: auto;
     }
     .intro-greeting {
-        margin-top: 85vh;       
+        margin-top: 85vh;
+        margin-right: 10%;
     }
     .intro-name {
         margin: auto;
@@ -536,14 +500,13 @@ nav .menu-btn i{
     
     .about-title {
         margin-left: 5%;
-        margin-top: -150%;
     }
     .about-text {
         width: auto; 
         padding: 10px 30px; 
     }
    .stack-title {
-    margin-top: 0;
+    margin-top: 20%;
    }
     .stack-icons {
         width: 100%;
@@ -573,27 +536,34 @@ nav .menu-btn i{
     .table-title {
         margin-left: -27%;
     }
-    .github-table {
-        width: 150%;
-        margin-left: 30px;
-    }
     /* Estilização das barras de rolagem */
     .github-container::-webkit-scrollbar {
-        width: 8px; 
-        height: 5px;
-    
+        width: 10px; 
     }
-
     .github-container::-webkit-scrollbar-thumb {
         background-color: #888; 
         border-radius: 8px; 
     }
-
     .github-container::-webkit-scrollbar-thumb:hover {
         background-color: #555; 
     }
+    .github-table {
+        width: 50%;
+        margin-left: 20px;
+
+    }
 
 
+    
+          
+            
+    
+
+          
+          Expand Down
+    
+    
+  
     .card-group-title {
         margin-bottom: 10px;  
         padding: 0 20px; 
@@ -606,9 +576,7 @@ nav .menu-btn i{
         margin-bottom: 20px; 
         
     }
-
 }
-
 /* Media query para telas de 481px a 768px */
 @media (min-width: 481px)  (max-width: 768px) {
     .logo-image{
@@ -638,18 +606,15 @@ nav .menu-btn i{
         flex-direction: column;
     }
 }
-
 /*TODO: Ajustar responsividade*/
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 959px) {
     .logo-image{
         margin-left: -250%;
     }
-
     .profile-pic .background-image {
         width: calc(100% - 150px);
         height: calc(100% - 150px);
     }
-
     .profile-pic {
         margin: auto;
     }
@@ -665,14 +630,19 @@ nav .menu-btn i{
     }
 }
     
+@media (max-width: 920px) {
+   
+    .logo-image {
+        width: 30px; 
+        height: 30px; 
+        position: relative;
+    } 
     .logo-title {
         margin: 2px 0 0 4px;
         position: absolute; 
         font-size: 1.5rem;
         color: #fff;
     }
-
-
     nav .menu-btn i{
         display: block;
     }
@@ -703,3 +673,5 @@ nav .menu-btn i{
     nav ul li a:hover{
         background: #09caa8;
     }   
+}
+  
