@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+
     var ul = document.querySelector('nav ul');
     var menuBtn = document.querySelector('.menu-btn i');
   
@@ -10,10 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   
-    // Adicione um event listener ao botão de menu para chamar a função menuShow
-    menuBtn.addEventListener('click', menuShow);
-  });
-  
+
 
 
 // Cria uma função chamada TxtType que recebe três parâmetros: el, toRotate e period
