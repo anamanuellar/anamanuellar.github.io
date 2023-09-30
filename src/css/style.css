@@ -215,10 +215,6 @@ nav .menu-btn i{
     align-items: center;
   }
 
-.section-title {
-    padding: 0 0 20px 0;
-}
-
 .table-title{
     font-size: 2rem;
     padding-bottom: 1em;
@@ -587,8 +583,9 @@ nav .menu-btn i{
     .github-container::-webkit-scrollbar-thumb:hover {
         background-color: #555; 
     }
-    table {
-        padding-right: 30px;
+    .github-table {
+        width: 50%;
+        
     }
 
     .card-group-title {
