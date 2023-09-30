@@ -30,7 +30,7 @@ body{
 a {
     cursor: pointer;
   }
-nav {
+  nav {
     position: fixed;
     top: 0;
     display: flex;
@@ -88,6 +88,8 @@ nav .menu-btn i{
     cursor: pointer;
     display: none;
 }
+
+
 
 .container {
     width: 100vw;
