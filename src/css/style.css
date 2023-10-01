@@ -458,6 +458,57 @@ nav .menu-btn i{
     justify-content: justify;
   }
 /*TODO: Ajustar responsividade*/
+@media (max-width:315px) {
+    #btn-bio{
+        margin-bottom: 45vh;
+        font-size: 1.5em;
+        padding: 1em;
+    }
+    .stack-title {
+        margin-left: -10px;
+    }
+    .heading{
+        margin-top: 100%;
+    }
+}
+@media (max-width: 360px) {
+    .container {
+        width: 90vw;
+        height: calc(50vh + 23px);        
+      }
+    .profile-pic .background-image {
+        width: calc(75% - 100px);
+        height: calc(75% - 100px);
+    }
+    .profile-pic {
+        margin-top: auto;
+    }
+    .intro-greeting {
+        margin-top: 90vh;
+        font-size: 3rem;
+    }
+    .intro-name {
+        margin: auto;
+        font-size: 3rem;
+    }
+    .typewrite-wrap { 
+        font-size: 2rem;
+        margin: auto;
+        padding-bottom: 1rem;
+    }
+    .about-title {
+        padding-top: 20rem;
+    }
+    .table-title {
+        padding-left: 10rem;
+    }
+    .card-group-title {
+        margin: 10px;  
+        padding: 0 20px; 
+    }
+}
+
+
 /* Tela menor que 480px - dispositivos móveis*/
 @media (max-width: 480px) {
     .container {
@@ -473,7 +524,6 @@ nav .menu-btn i{
     }
     .intro-greeting {
         margin-top: 85vh;
-        margin-right: 10%;
     }
     .intro-name {
         margin: auto;
@@ -499,15 +549,17 @@ nav .menu-btn i{
     }
     
     .about-title {
+        margin-top: -220%;
         margin-left: 5%;
     }
     .about-text {
         width: auto; 
         padding: 10px 30px; 
     }
-   .stack-title {
-    margin-top: 20%;
-   }
+    .stack-title {
+        margin-top: 50%;
+        padding: 30px 20px;
+    }
     .stack-icons {
         width: 100%;
         display: flex;
@@ -566,70 +618,128 @@ nav .menu-btn i{
         
     }
 }
-/* Media query para telas de 481px a 768px */
-@media (min-width: 481px)  (max-width: 768px) {
-    .logo-image{
-        margin-left: -250%;
-    }
+/* Media query para telas de 481px a 600px */
+@media (min-width: 481px) and (max-width: 600px) {
+    .container {
+        width: 90vw;
+        height: calc(50vh + 23px);        
+      }
     .profile-pic .background-image {
-        width: calc(80% - 150px);
-        height: calc(80% - 150px);
+        width: calc(75% - 100px);
+        height: calc(75% - 100px);
     }
     .profile-pic {
         margin-top: auto;
     }
     .intro-greeting {
         margin-top: 85vh;
-        font-size: 4rem;
     }
     .intro-name {
-        font-size: 4rem;
-        
+        margin: auto;
     }
     .typewrite-wrap { 
-        font-size: 3rem;
-        margin-right: 1rem;
+        font-size: 2rem;
+        margin: auto;
     }
-    .box{
-        display: flex;
-        flex-direction: column;
-    }
-}
-/*TODO: Ajustar responsividade*/
-@media only screen and (min-width: 769px) and (max-width: 959px) {
     .logo-image{
         margin-left: -250%;
     }
-    .profile-pic .background-image {
-        width: calc(100% - 150px);
-        height: calc(100% - 150px);
+    .box-container {
+        width: 100%; 
+        margin: 0; 
     }
-    .profile-pic {
-        margin: auto;
+    
+    .box-container:last-child {
+        margin-top: 180vh; 
+        margin-left: -90vw;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
     }
-    .intro-greeting {
-        margin-top: 90vh;
-        font-size: 4rem;
+    
+    .about-title {
+        margin-top: -120%;
+        margin-left: 5%;
     }
-        .intro-name {
-        font-size: 4rem;
+    .about-text {
+        width: auto; 
+        padding: 10px 30px; 
     }
-        .typewrite-wrap { 
-        font-size: 3rem;
+    #btn-bio{
+        margin-top: 5vh;
+    }
+    .stack-title {
+        margin-top: -60vh;
+        padding: 30px 20px;
+    }
+    .stack-icons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .stack-icons div {
+        width: calc(33.33% - 10px);
+        display: flex;
+        flex-direction: column;
+      }
+      .stack-icons svg {
+        width: 30px;
+        height: 35px;    
+    }
+    
+    .github-container {
+        overflow-x: scroll; 
+        max-height: 300px; 
+        margin-left: -5%;
+        margin-top: 10%;
+    }
+    .table-title {
+        margin-left: -27%;
+    }
+
+    /* Estilização das barras de rolagem */
+    .github-container::-webkit-scrollbar {
+        width: 8px; 
+    }
+    .github-container::-webkit-scrollbar-thumb {
+        background-color: #888; 
+        border-radius: 8px; 
+    }
+    .github-container::-webkit-scrollbar-thumb:hover {
+        background-color: #555; 
+    }
+    .github-table {
+        width: auto;
+        margin-left: 8%;
+    }
+
+    .card-group-title {
+        margin-bottom: 10px;  
+        padding: 0 20px; 
+    }
+    .card-deck {
+        width: 100%;
+    }
+    .card {
+        width: 100%; 
+        margin-bottom: 20px; 
+        
     }
 }
-    
-@media (max-width: 920px) {
-   
+/*TODO: Ajustar responsividade*/
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
     .logo-image {
-        width: 30px; 
-        height: 30px; 
+        padding-left: 10px; 
+        width: 40px; 
+        height: 40px; 
         position: relative;
     } 
     .logo-title {
-        margin: 2px 0 0 4px;
+        margin: 2px 0 0 150pxpx;
         position: absolute; 
-        font-size: 1.5rem;
+        font-size: 3rem;
         color: #fff;
     }
     nav .menu-btn i{
@@ -662,5 +772,158 @@ nav .menu-btn i{
     nav ul li a:hover{
         background: #09caa8;
     }   
+    .container {
+        width: 90vw;
+        height: calc(50vh + 23px);        
+      }
+    .profile-pic .background-image {
+        width: calc(100% - 100px);
+        height: calc(100% - 100px);
+    }
+    .profile-pic {
+        margin-top: auto;
+    }
+    .intro-greeting {
+        margin-top: 40vh;
+        font-size: 8rem;
+        padding: 2em 1em 0 1em;
+    }
+    .intro-name {
+        margin: auto;
+        font-size: 8rem;
+    }
+    .typewrite-wrap { 
+        font-size: 5rem;
+        margin: auto;
+    }
+    .logo-image{
+        margin-left: -250%;
+    }
+    .box-container {
+        width: 100%; 
+        margin: 0; 
+    }
+    
+    .box-container:last-child {
+        margin-top: 180vh; 
+        margin-left: -90vw;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about-title {
+        margin-top: -140%;
+        margin-left: 5%;
+        font-size: 3em;
+    }
+    .about-text {
+        width: auto; 
+        padding: 10px 30px; 
+        font-size: 3rem;
+
+    }
+    #btn-bio{
+        margin-top: 5vh;
+        font-size: 3rem;
+    }
+    .stack-title {
+        margin-top: -80vh;
+        padding: 30px 0px;
+        font-size: 3em;
+    }
+    .stack-icons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1px;
+        margin-left: -10px;
+      }
+      .stack-icons div {
+        width: calc(33.33% - 10px);
+        display: flex;
+        flex-direction: column;
+      }
+      .stack-icons svg {
+        width: 80px;
+        height: 80px;    
+    }
+    
+    .github-container {
+        overflow-x: scroll; 
+        max-height: 600px; 
+        margin-left: -5%;
+        margin-top: -10vh;
+    }
+    .table-title {
+        margin-left: -27%;
+        font-size: 4rem;
+    }
+
+    /* Estilização das barras de rolagem */
+    .github-container::-webkit-scrollbar {
+        width: 8px; 
+    }
+    .github-container::-webkit-scrollbar-thumb {
+        background-color: #888; 
+        border-radius: 8px; 
+    }
+    .github-container::-webkit-scrollbar-thumb:hover {
+        background-color: #555; 
+    }
+    .github-table {
+        width: 150%;
+        margin-left: 8%;
+    }
+
+    .card-group {
+        margin-top: 20vh;
+        font-size: 2.8em;
+        
+    }
+    .card-group-title {
+        font-size: 5rem;
+    }
+  
+    .card {
+        width: 100%;
+    }
+    .card-title {
+        font-size: 4rem;
+        margin-top: 2rem;
+    }
+    .card-img-top {
+        width: 550px;
+        height: 300px;
+    }
+   
+    .card-tag {
+        font-size: 1.3em;
+        
+    }
+    .card-link {
+        font-size: 5em;
+    }
+    .card-button {
+        font-size: 1.5em;
+        margin: 1.5em;
+    }
+    .contact-title {
+        font-size: 6em;
+      }
+      .contact-form {
+        font-size: 5em; 
+      }
+
+      .social-icons a {
+        font-size: 50px;
+      }
+      [type="submit"] {
+        font-size: 4em;
+      }
+
+
 }
   
