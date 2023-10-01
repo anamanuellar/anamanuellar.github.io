@@ -9,11 +9,24 @@ function menuShow() {
     }
 }
 
+/* Modal */
+
+const modal = document.getElementById('modal');
+const opModal = document.getElementById('opModal');
+const clModal = document.getElementById('clModal');
+const modalBg = document.getElementById('modalBg');
+const toggle = [opModal,clModal,modalBg];
+
+for (let i = 0; i<toggle.length ; i++){
+  toggle[i].addEventListener('click',function(){
+    modal.classList.toggle('is-show');
+  },false);
+}
+
+/* Typewriter */
 
 
-
-// Cria uma função chamada TxtType que recebe três parâmetros: el, toRotate e period
-var TxtType = function(el, toRotate, period) {
+var TxtType = function(el, toRotate, period) {// Cria uma função chamada TxtType que recebe três parâmetros: el, toRotate e period
     // Armazena o valor do parâmetro toRotate em uma variável chamada this.toRotate
     this.toRotate = toRotate;
     // Armazena o valor do parâmetro el em uma variável chamada this.el
