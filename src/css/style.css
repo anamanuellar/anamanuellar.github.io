@@ -96,7 +96,7 @@ nav .menu-btn i{
 .profile-pic {
     width: 300px;
     height: 300px;
-    margin: auto;
+    margin-left: 1%;
 }
 .background-image {
     position: absolute;
@@ -104,6 +104,7 @@ nav .menu-btn i{
     left: calc(50% - 150px);
     width: 300px;
     height: 300px;
+    margin-left: 4%;
     border-radius: 50%;
     box-shadow:
       inset 0 0 50px #fff,      /* inner white */
@@ -115,6 +116,7 @@ nav .menu-btn i{
       -10px 0 80px #f0f,        /* outer left magenta */
       10px 0 80px #0ff;         /* outer right cyan */
 }
+
 .divider {
     padding: 6rem;
 }
@@ -122,16 +124,19 @@ nav .menu-btn i{
     display: inline-block;
     font-size: 5rem;
     margin-top: 60vh;
+    margin-left: 2%;
 }
 .intro-name {
     font-size: 5rem;
     font-weight: bold;
     color: var(--main-color);
+    margin-left: 2%;
 }
 .typewrite-wrap { 
     border-right: 0.08em solid #fff;
     color: var(--text-color);
     font-size: 4rem;
+    margin-left: 2%;
 }
 .heading{
     font-size: 1.5rem;
@@ -536,8 +541,6 @@ nav .menu-btn i{
     }
 }
 
-
-/* Tela menor que 480px - dispositivos móveis*/
 @media (max-width: 480px) {
     .container {
         width: 90vw;
@@ -577,7 +580,7 @@ nav .menu-btn i{
     }
     
     .about-title {
-        margin-top: -220%;
+        margin-top: -120%;
         margin-left: 5%;
     }
     .about-text {
@@ -585,7 +588,7 @@ nav .menu-btn i{
         padding: 10px 30px; 
     }
     .stack-title {
-        margin-top: 50%;
+        margin-top: -40%;
         padding: 30px 20px;
     }
     .stack-icons {
@@ -593,9 +596,7 @@ nav .menu-btn i{
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
-    
-        
+        justify-content: space-around;   
       }
     
       .stack-icons div {
@@ -607,7 +608,6 @@ nav .menu-btn i{
         width: 30px;
         height: 35px;    
     }
-    
     .github-container {
         overflow-x: scroll; 
         max-height: 300px; 
@@ -616,8 +616,6 @@ nav .menu-btn i{
     .table-title {
         margin-left: -27%;
     }
-
-    /* Estilização das barras de rolagem */
     .github-container::-webkit-scrollbar {
         width: 8px; 
     }
@@ -642,12 +640,10 @@ nav .menu-btn i{
     }
     .card {
         width: 100%; 
-        margin-bottom: 20px; 
-        
+        margin-bottom: 20px;  
     }
 }
 
-/* Media query para telas de 481px a 600px */
 @media (min-width: 481px) and (max-width: 600px) {
     .container {
         width: 90vw;
