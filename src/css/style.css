@@ -121,15 +121,15 @@ nav .menu-btn i{
 }
 .intro-greeting {
     display: inline-block;
-    font-size: 5rem;
-    margin-top: 60vh;
-    margin-left: 2%;
+    font-size: 6rem;
+    margin-top: 75vh;
+   
 }
 .intro-name {
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: bold;
     color: var(--main-color);
-    margin-left: 2%;
+    paddding-left: 2%;
 }
 .typewrite-wrap { 
     border-right: 0.08em solid #fff;
@@ -339,6 +339,7 @@ nav .menu-btn i{
     width: 100%;
     box-sizing: border-box;
     outline: 0;
+    color: #fff;
   }
   
   .contact-form:focus {
@@ -349,6 +350,7 @@ nav .menu-btn i{
     height: 150px;
     line-height: 150%;
     resize: vertical;
+    color: #fff;
   }
   
   [type="submit"] {

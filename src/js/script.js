@@ -95,6 +95,11 @@ window.onload = function() {
     }
 }
 
+/* Form */
+function showAlert(){
+    alert("Sua mensagem foi enviada com sucesso");
+}
+
 
 /* Modal */
 
